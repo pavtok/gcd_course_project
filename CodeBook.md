@@ -20,19 +20,19 @@ The complete data is in the folder UCI HAR Dataset (can be found [here](https://
 
 The script "run_analysis.R" merges all 'X', 'y' and 'subject' data from both sources into one data set. Then keeps the activity, subject data and the mean and standard deviation variables. Then cleans variable names. Finally, creates a second data set which contains a summary with averages of all numeric variables.  
 
-\newpage
+
 ## 02. Data
 
 * _dataset.csv_
-\    
+    
   + Number of variables: 70
   + Number of rows: 10299
   + Description: This data set takes subject ("subject_(...).txt"), _mean_ and _standard deviation_ variables from original data set ("X_(...).txt") 
   and activity data ("y_(...).txt"), from the 'test' and 'train' raw data. The first variables has the basic data ('Subject', 'Activity_Index', 'Activity', 'Type') and the other ones contains the features.
   
-\  
+  
 * _dataset2.csv_
-\  
+  
   + Number of variables: 70
   + Number of rows: 180
   + Description: This data set is a summary of the previous data set (dataset.csv). Has one row by activity (6 per subject) by subject (30). The first variables has the basic data ('Subject', 'Activity_Index', 'Activity', 'Type') and the other ones contains the averages of each variable by activity by subject.
@@ -42,7 +42,7 @@ The script "run_analysis.R" merges all 'X', 'y' and 'subject' data from both sou
 * Subject
   + Class: Factor
   + Description: Each number identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
-\  
+  
 * Activity_Index
   + Class: Factor
   + Description: Each number identifies the activity: 
@@ -52,15 +52,15 @@ The script "run_analysis.R" merges all 'X', 'y' and 'subject' data from both sou
     + 4: sitting
     + 5: standing
     + 6: laying
-\  
+  
 * Activity
   + Class: Character
   + Description: The same as the previous one, but with more explicit labels.
-\  
+  
 * Type
   + Class: Factor
   + Description: Indicates which set type it belongs to: 'train' or 'test' data.
-\  
+  
 * Features variables:
   + Class: Numeric
   + Variable names:
