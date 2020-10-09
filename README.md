@@ -68,7 +68,7 @@ Finally, uses "write.table" to export data set into a file called "dataset.txt".
 THE AVERAGE OF EACH VARIABLE FOR EACH ACTIVITY AND EACH SUBJECT":
 
 Uses "dplyr" functions ("group_by" and "summarise_if") to create a new data set 
-called "dataset2", that contains one row by activity (6 per subject) by subject (30).
+called "datasummary", that contains one row by activity (6 per subject) by subject (30).
 The first variables has the basic data ('Subject', 'Activity_Index', 'Activity', 'Type') 
 and the other ones contains the averages of each variable by activity by subject.
 
